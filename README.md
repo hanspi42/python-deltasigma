@@ -1,12 +1,11 @@
 python-deltasigma
 =================
 
-## Notes  
-This forked repository is maintained by **Yuki Fukuda**.  
-If you want to visit original repository,  [ggventurini/python-deltasigma](https://github.com/ggventurini/python-deltasigma).  
+## Notes
+This forked repository is maintained by **Hanspeter Schmid** and bases on updates
+done by **Yuki Fukuda**.
 
-**Today, I noified that the calcuration is sometimes incorrect in vanilla python.
-I stlongly recommend to use this library with [Anaconda](https://www.anaconda.com/).**
+If you want to visit the original repository,  [ggventurini/python-deltasigma](https://github.com/ggventurini/python-deltasigma).  
 
 ---
 
