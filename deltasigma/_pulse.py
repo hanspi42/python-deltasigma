@@ -22,7 +22,7 @@ from __future__ import division
 import collections
 
 import numpy as np
-from scipy.signal import lti, step2
+from scipy.signal import lti, step
 
 from ._utils import _is_A_B_C_D, _is_num_den, _is_zpk, lcm, rat
 
@@ -91,7 +91,7 @@ def pulse(S, tp=(0., 1.), dt=1., tfinal=10., nosum=False):
     for Si in S:
         y2 = None
         for So in Si:
-            _, y2i = step2(So, T=np.arange(0., tfinal + delta_t, delta_t))
+            _, y2i = step(So, T=np.arange(0., tfinal + delta_t, delta_t))
             if y2 is None:
                 y2 = y2i.reshape((y2i.shape[0], 1, 1))
             else:
