@@ -64,7 +64,7 @@ def calculateSNR(hwfft, f, nsig=1):
     noiseBins = np.delete(noiseBins, noiseBins[signalBins - 1] - 1)
     n = norm(hwfft[noiseBins - 1])
     if n == 0:
-        snr = np.Inf
+        snr = np.inf
     else:
         snr = dbv(s/n)
     return snr

@@ -60,5 +60,5 @@ def ds_hann(n):
       plt.ylabel("Value")
 
     """
-    x = np.arange(n, dtype='float_')
+    x = np.arange(n, dtype='float')
     return .5*(1 - np.cos(2*np.pi*x/n))
