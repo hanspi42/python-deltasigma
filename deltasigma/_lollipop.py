@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 #       | | o | | | | | | o o | | | | | | | 
 #       +----------------------------------->
 
-def lollipop(x, y, color=None, lw=2, ybot=0):
+def lollipop(x, y, color='tab:red', lw=2, ybot=0):
     """Plot lollipops (o's and sticks)
     
     **Parameters:**
@@ -39,8 +39,7 @@ def lollipop(x, y, color=None, lw=2, ybot=0):
     x, y : ndarrays
         The data to be plotted
 
-    color : any matplotlib color, optional
-            plotting color
+    color : any matplotlib color, default: red
 
     lw : float, optional
          line width value in points
@@ -72,13 +71,8 @@ def lollipop(x, y, color=None, lw=2, ybot=0):
         warn('lollipop() got a non-zero ybot, but only ybot=0 is ' + \
              'supported. Setting ybot to 0.')
     
-    if (sys.version_info.minor <= 5):
-        markerline, stemlines, baseline = plt.stem(x, y, '-')
-    else:
-        markerline, stemlines, baseline = plt.stem(x, y, '-', use_line_collection=False)
+    markerline, stemlines, baseline = plt.stem(x, y, '-')
     
-    if not color or color == 'None':
-        color = stemlines[0].get_color()
     lolli_fmt = {'linewidth': lw, 'color': color}
     pop_fmt = {'mec': color, 'markerfacecolor':'None',  \
                'markersize':10, 'markeredgewidth': lw*1.1}
