@@ -15,8 +15,8 @@ with newer versions of numpy.  The following has been done:
 
 - New example file `dsdemo_idletones.ipynb`,
 - BLAS support disabled; C code can presently not be run anymore,
-- Many small changes to correct re-named functions in numpy,
 - removed step2 from scipy (not supported anymore); replaced by the faster step,
+- Many small changes to correct re-named functions in numpy,
 - Some changes to improve the python code.
 
 `pip install` does not work anymore.
