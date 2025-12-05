@@ -153,7 +153,7 @@ def predictSNR(ntf, OSR=64, amp=None, f0=0.):
     den = np.real_if_close(den)
     num1 = num - den
     N = max(amp.shape)
-    snr = np.zeros((1, N)) - np.Inf
+    snr = np.zeros((1, N)) - np.inf
     k0 = np.zeros((1, N))
     k1 = np.zeros((1, N))
     sigma_e2 = np.zeros((1, N))
@@ -255,6 +255,6 @@ def powerGain(num, den, Nimp=100):
     if not unstable:
         pGain = np.sum(imp**2)
     else:
-        pGain = np.Inf
+        pGain = np.inf
 
     return pGain, Nimp

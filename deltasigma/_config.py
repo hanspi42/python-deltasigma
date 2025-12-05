@@ -21,7 +21,7 @@ import sys
 from warnings import warn
 
 import numpy as np
-from numpy.distutils.system_info import get_info
+# from numpy.distutils.system_info import get_info
 
 # should synthesizeNTF run the optimization routine?
 optimize_NTF = True
@@ -34,7 +34,8 @@ itn_limit = 500
 _debug = False
 
 # get blas information to compile the cython extensions
-blas_info = get_info("blas")
+# blas_info = get_info("blas")
+blas_info = ""
 if len(blas_info) == 0 and _debug:
     warn("Numpy did not detect the BLAS library in the system")
 # Let's make an educated guess

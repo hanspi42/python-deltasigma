@@ -48,7 +48,7 @@ def dbm(v, R=50):
     """
     iform = save_input_form(v)
     v = carray(v)
-    y = -np.Inf * np.ones(np.size(v))
+    y = -np.inf * np.ones(np.size(v))
     nonzero = (v != 0)
     y[nonzero] = 10. * np.log10(np.abs(v[nonzero] ** 2.) / R) + 30
     return restore_input_form(y, iform)

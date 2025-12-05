@@ -7,10 +7,23 @@ done by **Yuki Fukuda**.
 
 If you want to visit the original repository,  [ggventurini/python-deltasigma](https://github.com/ggventurini/python-deltasigma).  
 
----
+The original repository is not maintained anymore, and Yuki Fukuda have deleted
+their user account.
+
+The purpose of this repository is, for now, simply to keep the toolbox running
+with newer versions of numpy.  The following has been done:
+
+- New example file `dsdemo_idletones.ipynb`,
+- BLAS support disabled; C code can presently not be run anymore,
+- removed step2 from scipy (not supported anymore); replaced by the faster step,
+- Many small changes to correct re-named functions in numpy,
+- Some changes to improve the python code.
+
+`pip install` does not work anymore.
+
+--- Original README.md ---
 
 A port of the **MATLAB Delta Sigma Toolbox** based on free software and very little sleep
-
 
 The **python-deltasigma** is a Python package to *synthesize, simulate, scale
 and map to implementable topologies* **delta sigma modulators**.

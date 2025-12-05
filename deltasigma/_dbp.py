@@ -43,7 +43,7 @@ def dbp(x):
     """
     iform = save_input_form(x)
     x = carray(x)
-    y = -np.Inf * np.ones(x.shape)
+    y = -np.inf * np.ones(x.shape)
     nonzero = (x != 0)
     y[nonzero] = 10. * np.log10(np.abs(x[nonzero]))
     return restore_input_form(y, iform)
